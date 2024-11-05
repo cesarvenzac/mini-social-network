@@ -20,8 +20,10 @@ class Feed extends HTMLElement {
         return `
         <li>
           <section class="header">
-            <span>${post.author}</span>
-            <span>${new Date(post.timestamp).toLocaleString()}</span>
+            <span class="author">${post.author}</span>
+            <span class="date">${new Date(
+              post.timestamp
+            ).toLocaleString()}</span>
           </section>
           <section class="content">
             <p>${post.content.text}</p>
