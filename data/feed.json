@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "John Doe",
+      "timestamp": "2024-11-05T10:30:00Z",
+      "content": {
+        "text": "Enjoying a beautiful day at the beach!",
+        "image": "./assets/beach.webp"
+      },
+      "reactions": {
+        "like": 10,
+        "dislike": 2,
+        "love": 25
+      },
+      "comments": [
+        {
+          "id": 101,
+          "author": "Jane Smith",
+          "timestamp": "2024-11-05T11:00:00Z",
+          "text": "Looks amazing, wish I was there!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "Alice Green",
+      "timestamp": "2024-11-04T18:45:00Z",
+      "content": {
+        "text": "Just tried out a new recipe! 🍲"
+      },
+      "reactions": {
+        "like": 15,
+        "dislike": 0,
+        "love": 30
+      },
+      "comments": []
+    }
+  ]
+}
