@@ -51,18 +51,18 @@ class Feed extends HTMLElement {
           </section>
           <section class="footer">
             <section class="reactions">
-              <div class="comments-toggle">
+              <button class="comments-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
                 <span>${post.comments.length}</span>
-              </div>
-              <div>
+              </button>
+              <button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> 
                 <span>${post.reactions.like}</span>
-              </div>
-              <div>
+              </button>
+              <button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-repeat-2"><path d="m2 9 3-3 3 3"/><path d="M13 18H7a2 2 0 0 1-2-2V6"/><path d="m22 15-3 3-3-3"/><path d="M11 6h6a2 2 0 0 1 2 2v10"/></svg>
                 <span>${post.reactions.repost}</span>
-              </div>
+              </button>
             </section>
             <section class="comments" style="display: none;">
               <ul>
@@ -72,7 +72,9 @@ class Feed extends HTMLElement {
                   <li>
                     <section class="header">
                       <span class="author">${comment.author}</span>
-                      <span class="date">${this.timeAgo(post.timestamp)}</span>
+                      <span class="date">${this.timeAgo(
+                        comment.timestamp
+                      )}</span>
                     </section>
                     <section class="content">
                       <p>${comment.text}</p>

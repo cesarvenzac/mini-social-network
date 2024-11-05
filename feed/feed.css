@@ -48,9 +48,10 @@
   gap: 16px;
 }
 
-.feed-container li .footer .reactions > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
+.feed-container li .footer .reactions button {
+  color: var(--secondaryColor);
+}
+
+.feed-container li .footer .comments li {
+  box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
 }
