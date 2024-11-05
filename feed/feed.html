@@ -36,16 +36,25 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <custom-navigation></custom-navigation>
+    <nav>
+      <custom-navigation></custom-navigation>
+    </nav>
     <main>
       <custom-feed></custom-feed>
     </main>
+    <nav>
+      <side-menu></side-menu>
+    </nav>
     <script
       src="../components/Navigation.js"
       async
       defer></script>
     <script
       src="../components/Feed.js"
+      async
+      defer></script>
+    <script
+      src="../components/SideMenu.js"
       async
       defer></script>
   </body>

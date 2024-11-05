@@ -10,8 +10,7 @@
       },
       "reactions": {
         "like": 10,
-        "dislike": 2,
-        "love": 25
+        "repost": 25
       },
       "comments": [
         {
@@ -31,8 +30,75 @@
       },
       "reactions": {
         "like": 15,
-        "dislike": 0,
-        "love": 30
+        "repost": 30
+      },
+      "comments": []
+    },
+    {
+      "id": 3,
+      "author": "John Doe",
+      "timestamp": "2024-11-05T10:30:00Z",
+      "content": {
+        "text": "Enjoying a beautiful day at the beach!",
+        "image": "../assets/beach.jpeg"
+      },
+      "reactions": {
+        "like": 10,
+        "repost": 25
+      },
+      "comments": [
+        {
+          "id": 101,
+          "author": "Jane Smith",
+          "timestamp": "2024-11-05T11:00:00Z",
+          "text": "Looks amazing, wish I was there!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "author": "Alice Green",
+      "timestamp": "2024-11-04T18:45:00Z",
+      "content": {
+        "text": "Just tried out a new recipe! 🍲"
+      },
+      "reactions": {
+        "like": 15,
+        "repost": 30
+      },
+      "comments": []
+    },
+    {
+      "id": 5,
+      "author": "John Doe",
+      "timestamp": "2024-11-05T10:30:00Z",
+      "content": {
+        "text": "Enjoying a beautiful day at the beach!",
+        "image": "../assets/beach.jpeg"
+      },
+      "reactions": {
+        "like": 10,
+        "repost": 25
+      },
+      "comments": [
+        {
+          "id": 101,
+          "author": "Jane Smith",
+          "timestamp": "2024-11-05T11:00:00Z",
+          "text": "Looks amazing, wish I was there!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "author": "Alice Green",
+      "timestamp": "2024-11-04T18:45:00Z",
+      "content": {
+        "text": "Just tried out a new recipe! 🍲"
+      },
+      "reactions": {
+        "like": 15,
+        "repost": 30
       },
       "comments": []
     }
