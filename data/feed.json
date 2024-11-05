@@ -6,7 +6,7 @@
       "timestamp": "2024-11-05T10:30:00Z",
       "content": {
         "text": "Enjoying a beautiful day at the beach!",
-        "image": "./assets/beach.webp"
+        "image": "../assets/beach.jpeg"
       },
       "reactions": {
         "like": 10,

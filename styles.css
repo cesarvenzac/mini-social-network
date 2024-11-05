@@ -2,10 +2,8 @@
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
 
-  --primaryColor: #6363da;
-  --secondaryColor: #d3d3f1;
-  --white: #ffffff;
-  --black: #000000;
+  --primaryColor: #141414;
+  --secondaryColor: #e9e7ee;
 }
 
 @supports (font-variation-settings: normal) {
@@ -25,12 +23,15 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  margin: 8px;
+  color: var(--primaryColor);
+  background-color: #e0e0e0;
 }
 
 a {
-  color: var(--black);
+  color: var(--primaryColor);
   text-decoration: none;
 }
 
@@ -39,15 +40,27 @@ ul {
 }
 
 nav {
-  background-color: var(--secondaryColor);
   padding: 16px 32px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
 }
 
 nav ul {
   display: flex;
-  gap: 16px;
+  gap: 32px;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
 }
 
 main {
   padding: 16px 32px;
+}
+
+img {
+  width: 100%;
 }

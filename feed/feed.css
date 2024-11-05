@@ -1,0 +1,13 @@
+.feed-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.feed-container li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
