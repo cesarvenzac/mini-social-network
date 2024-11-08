@@ -7,8 +7,8 @@
 .feed-container li {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 8px 16px;
+  gap: 16px;
+  padding: 16px;
   border-radius: 8px;
   box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
 }
@@ -33,13 +33,13 @@
 .feed-container li .content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .feed-container li .footer {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .feed-container li .footer .reactions {
@@ -50,8 +50,19 @@
 
 .feed-container li .footer .reactions button {
   color: var(--secondaryColor);
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+.feed-container li .footer .comments {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .feed-container li .footer .comments li {
   box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+
+.feed-container li .footer .comments input {
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
 }
